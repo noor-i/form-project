@@ -4,11 +4,13 @@ body{
     background-position: 10% 75%;
     background-size: 118%; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 0%;
-    margin: 0%;
     font-family: "Poppins";
     position: relative;
     z-index: 1;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 .logo-box{
@@ -30,11 +32,63 @@ body{
     padding-left: 850px;
 }
 
+/* The form portion of the website*/
 .form-bg{
     background-color: antiquewhite;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 59%;
     height: 100vh;
     position: absolute;
     z-index: 3;
+}
+
+.form-bg > *:not(:nth-child(3)){
+    padding-left: 50px;
+    padding-right: 130px;
+}
+
+form{
+    display: block;
+    padding-left: 50px;
+    padding-right: 130px;
+    padding-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgb(158, 158, 158);
+}
+
+.form-class{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 35px;
+    row-gap: 25px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+    margin: 0;
+}
+
+button{
+    width: 160px;
+    height: 35px;
+    box-shadow: black;
+    margin-top: 30px;
+    background-color: rgb(39, 64, 31);
+    color: white;
+    border: 1px, solid, rgb(39, 64, 31);
+    border-radius: 3px;
+    box-shadow:0px 1px 5px rgb(112, 107, 107);
+    font-size: large;
+}
+
+.log-in{
+    color:rgb(39, 64, 31);
+    font-weight: bold;
 }
