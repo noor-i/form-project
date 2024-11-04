@@ -1,0 +1,40 @@
+body{
+    background-image: url(bg-pic.png);
+    background-attachment: fixed;
+    background-position: 10% 75%;
+    background-size: 118%; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins";
+    position: relative;
+    z-index: 1;
+}
+
+.logo-box{
+    background-color: rgba(22, 14, 14, 0.5);
+    opacity: 0.3px;
+    display: block;
+    height: 90px;
+    width: 100vw;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 2;
+}
+
+.logo-box .logo{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 60px;
+    color: antiquewhite;
+    padding-left: 850px;
+}
+
+.form-bg{
+    background-color: antiquewhite;
+    display: block;
+    width: 59%;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+}
