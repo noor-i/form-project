@@ -21,31 +21,31 @@
             <div class="form-class">
                 <div class="form-group">
                     <label for="first-name"><h5>FIRST NAME</h5></label>
-                    <input>
+                    <input type="text" id="first-name" required pattern="[A-Za-z]+" title="First name should only contain letters.">
                 </div>
                 <div class="form-group">
                     <label for="last-name"><h5>LAST NAME</h5></label>
-                    <input>
+                    <input type="text" id="last-name" required pattern="[A-Za-z]+" title="Last name should only contain letters.">
                 </div>
                 <div class="form-group">
                     <label for="email"><h5>EMAIL</h5></label>
-                    <input>
+                    <input type="email" id="email" required>
                 </div>
                 <div class="form-group">
                     <label for="phone-number"><h5>PHONE NUMBER</h5></label>
-                    <input>
+                    <input type="tel" id="phone-number" required minlength="8" maxlength="15" title="Enter a number of 8-15 digits.">
                 </div>
                 <div class="form-group">
                     <label for="password"><h5>PASSWORD</h5></label>
-                    <input>
+                    <input type="password" id="password" required length="8" title="Required password length: 8.">
                 </div>
                 <div class="form-group">
                     <label for="confirm-password"><h5>CONFIRM PASSWORD</h5></label>
-                    <input>
+                    <input type="password" id="confirm-password" required length="8" title="Required password length: 8.">
                 </div>                
             </div>
+            <div><button><h5>Create Account</h5></button></div>
        </form>
-       <div><button><h5>Create Account</h5></button></div>
        <p>Already have an account? <a class="log-in" href="">Log in</a></p>
     </div>
 </body>

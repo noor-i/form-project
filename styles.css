@@ -75,7 +75,19 @@ h5{
     margin: 0;
 }
 
+/* Create Account Button*/
 button{
+    width: 160px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: rgb(39, 64, 31);
+    color: white;
+    border: 1px, solid, rgb(39, 64, 31);
+    border-radius: 3px;
+    font-size: large;
+}
+
+button:hover{
     width: 160px;
     height: 35px;
     box-shadow: black;
@@ -86,9 +98,19 @@ button{
     border-radius: 3px;
     box-shadow:0px 1px 5px rgb(112, 107, 107);
     font-size: large;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.98); 
 }
 
 .log-in{
     color:rgb(39, 64, 31);
     font-weight: bold;
+}
+
+/* Checking user input validity */
+:invalid:required {
+    border: red solid 1px;
 }
